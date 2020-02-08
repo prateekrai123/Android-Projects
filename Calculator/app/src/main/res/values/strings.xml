@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="hint1">1st Number</string>
+    <string name="x">x</string>
+    <string name="sub">-</string>
+    <string name="div">/</string>
+    <string name="add">+</string>
+    <string name="display_result">The result will be displayed here</string>
+    <string name="hint2">2nd Number</string>
+</resources>
