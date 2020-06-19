@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5FFAAB4"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/foodie2" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:maxLength="10"
+        android:inputType="number|phone"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/mobile_number_10_digits" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="170dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/password"/>
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="350dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="#F4511E"
+        android:text="@string/log_in"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"/>
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_marginLeft="30dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="#F4511E"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/register_here"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

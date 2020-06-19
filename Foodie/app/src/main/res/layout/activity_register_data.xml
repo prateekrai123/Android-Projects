@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5FFAAB4"
+    tools:context=".RegisterData">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Name :- "
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Email :- "
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Phone :- "
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvDelAdd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Delievery Address :- "
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvPass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Password :- "
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvConfPass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Confirm Password :- "
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btExit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#F4511E"
+        android:text="EXIT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"/>
+
+</RelativeLayout>
