@@ -44,10 +44,10 @@ class Login : AppCompatActivity() {
         btLogin.setOnClickListener {
             sharedPreferences.edit().putBoolean("isLogged", true).apply()
             val intent = Intent(this, LoginData::class.java)
-            intent.putExtra("phone", etMobile.text.toString())
-            intent.putExtra("password", etPassword.text.toString())
-//            sharedPreferences.edit().putString("phone", etMobile.text.toString()).apply()
-//            sharedPreferences.edit().putString("password", etPassword.text.toString()).apply()
+//            intent.putExtra("phone", etMobile.text.toString())
+//            intent.putExtra("password", etPassword.text.toString())
+            sharedPreferences.edit().putString("phone", etMobile.text.toString()).apply()
+            sharedPreferences.edit().putString("password", etPassword.text.toString()).apply()
             startActivity(intent)
         }
 
@@ -56,13 +56,9 @@ class Login : AppCompatActivity() {
         }
 
         btRegister.setOnClickListener {
-            startActivity(Intent(this, Register::class.java))
+            val intent = Intent(this, Register::class.java)
+            startActivity(intent)
         }
 
-    }
-
-    override fun onPause() {
-        super.onPause()
-        finish()
     }
 }

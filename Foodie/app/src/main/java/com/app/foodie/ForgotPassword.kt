@@ -16,6 +16,8 @@ class ForgotPassword : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
 
+        title = "Forgot Password"
+
         btNext = findViewById(R.id.btNext)
         etPhone = findViewById(R.id.etMobile)
         etEmail = findViewById(R.id.etEmail)

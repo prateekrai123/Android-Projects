@@ -9,17 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterData"></activity>
+        <activity android:name=".RegisterData" />
         <activity android:name=".ForgotPassData" />
         <activity android:name=".LoginData" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".Register" />
-        <activity android:name=".OTPpage" />
         <activity android:name=".Login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

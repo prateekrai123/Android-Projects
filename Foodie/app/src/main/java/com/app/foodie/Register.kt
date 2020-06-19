@@ -20,9 +20,11 @@ class Register : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
+        title = "Register"
+
         etName = findViewById(R.id.etName)
         etEmail = findViewById(R.id.etEmail)
-        etPhone = findViewById(R.id.etPhone)
+        etPhone = findViewById(R.id.etMobile)
         etDelAdd = findViewById(R.id.etAddress)
         etPass = findViewById(R.id.etPassword)
         etConfPass = findViewById(R.id.etConfPassword)

@@ -12,7 +12,6 @@ class LoginData : AppCompatActivity() {
 
     lateinit var tvPhone : TextView
     lateinit var tvPassword : TextView
-    lateinit var btExit : Button
     lateinit var btLogOut : Button
     lateinit var sharedPreferences: SharedPreferences
 
@@ -20,11 +19,12 @@ class LoginData : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_data)
 
+        title = "Login Data"
+
         sharedPreferences = getSharedPreferences("Foodie", Context.MODE_PRIVATE)
 
         tvPhone = findViewById(R.id.tvPhone)
         tvPassword = findViewById(R.id.tvPassword)
-        btExit = findViewById(R.id.btExit)
         btLogOut = findViewById(R.id.btLogOut)
         btLogOut.setOnClickListener{
             val intent  = Intent(this, Login::class.java)
@@ -32,14 +32,11 @@ class LoginData : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btExit.setOnClickListener{
-            finish()
-        }
-        val phone = intent.getStringExtra("phone")
-        val password = intent.getStringExtra("password")
+        val phone = sharedPreferences.getString("phone", "")
+        val password = sharedPreferences.getString("password", "")
 
-        tvPhone.text = "Phone :- "+phone
-        tvPassword.text = "Password :- "+password
+        tvPhone.text = phone
+        tvPassword.text = password
 
     }
 }
