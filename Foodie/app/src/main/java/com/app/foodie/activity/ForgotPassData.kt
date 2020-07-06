@@ -1,11 +1,9 @@
-package com.app.foodie
+package com.app.foodie.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
-import org.w3c.dom.Text
-import kotlin.system.exitProcess
+import com.app.foodie.R
 
 class ForgotPassData : AppCompatActivity() {
 

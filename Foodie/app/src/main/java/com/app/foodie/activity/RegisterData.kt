@@ -1,9 +1,9 @@
-package com.app.foodie
+package com.app.foodie.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
+import com.app.foodie.R
 
 class RegisterData : AppCompatActivity() {
 

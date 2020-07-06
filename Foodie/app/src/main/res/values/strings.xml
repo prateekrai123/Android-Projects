@@ -8,4 +8,14 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="name">"   Name"</string>
     <string name="sharedPreferences">Foodie</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="favourite_restaurants">Favourite Restaurants</string>
+    <string name="faqs">FAQs</string>
+    <string name="log_out">Log Out</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

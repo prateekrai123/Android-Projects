@@ -1,16 +1,15 @@
-package com.app.foodie
+package com.app.foodie.activity
 
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.view.View
-import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.app.foodie.R
+import com.google.android.material.navigation.NavigationView
 
 class Login : AppCompatActivity() {
 
@@ -28,7 +27,7 @@ class Login : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences(getString(R.string.sharedPreferences), Context.MODE_PRIVATE)
 
-        var isLogged = sharedPreferences.getBoolean("isLogged", false)
+        val isLogged = sharedPreferences.getBoolean("isLogged", false)
 
         if(isLogged){
             val intent = Intent(this, LoginData::class.java)
@@ -40,6 +39,8 @@ class Login : AppCompatActivity() {
         etMobile = findViewById(R.id.etPhone)
         etPassword = findViewById(R.id.etPassword)
         forgotPassword = findViewById(R.id.forgotPassword)
+
+
 
         btLogin.setOnClickListener {
             sharedPreferences.edit().putBoolean("isLogged", true).apply()

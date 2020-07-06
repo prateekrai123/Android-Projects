@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B5FFAAB4"
-    tools:context=".ForgotPassData">
+    tools:context=".activity.ForgotPassData">
 
     <TextView
         android:id="@+id/tvPhone"
