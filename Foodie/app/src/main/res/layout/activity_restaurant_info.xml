@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5FFAAB4"
+    tools:context=".activity.RestaurantInfo">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="abc"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Choose from menu listed below :- "
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        android:textAlignment="center"
+        android:background="#E64A19"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="529dp"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/addToCart"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="Add to cart"
+        android:textSize="19sp"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        android:background="#E64A19"/>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="abc"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp">
+
+        <TextView
+            android:id="@+id/resName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="19sp"
+            android:textColor="#000000"
+            android:text="Ordering from :- "
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"/>
+
+        <Button
+            android:id="@+id/placeOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F4511E"
+            android:text="Place Order"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

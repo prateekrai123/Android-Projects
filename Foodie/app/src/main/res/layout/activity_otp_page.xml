@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#B5FFAAB4"
+    tools:context=".activity.OtpPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="abc"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textColor="#000000"
+            android:text="@string/OTP_main"/>
+
+        <EditText
+            android:id="@+id/etOtp"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:layout_marginTop="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etNewPass"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etConfPass"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:layout_marginTop="210dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btSubmit"
+            android:layout_marginTop="270dp"
+            android:padding="10dp"
+            android:text="@string/submit"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:background="#F4511E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="invisible">
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="164dp"
+            android:layout_height="172dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

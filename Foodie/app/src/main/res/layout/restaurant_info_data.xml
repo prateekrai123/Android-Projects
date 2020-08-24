@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:theme="@style/Theme.MaterialComponents.Light">
+
+        <TextView
+            android:id="@+id/serialNumber"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:textSize="19sp"
+            android:textColor="#000000"
+            android:layout_marginStart="60dp" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginStart="60dp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="235dp"
+            android:text="Add"
+            android:background="#F4511E"
+            android:textSize="17sp"/>
+
+        <Button
+            android:id="@+id/remove"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="235dp"
+            android:text="Remove"
+            android:background="#FBC02D"
+            android:textSize="17sp"
+            android:visibility="invisible"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
